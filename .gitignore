@@ -1,0 +1,17 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Temp
+*.log
+*.tmp
+
+# Local secrets (연습용 비번은 커밋 OK지만 실습 확장 대비)
+.env
+*.local
