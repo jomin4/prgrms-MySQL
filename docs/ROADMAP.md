@@ -14,15 +14,15 @@
 - [x] 섹션 4. 데이터 관리 (DDL·DML·제약조건) — 수강 완료 · [복습 파일](../sql/01_review/section4_데이터관리_복습.sql)
 - [x] 섹션 5. 조회와 정렬 (SELECT·WHERE·ORDER BY·LIMIT·DISTINCT·NULL) — 수강 완료 · [복습 파일](../sql/01_review/section5_조회와정렬_복습.sql)
 - [x] 섹션 6. 데이터 가공 (산술·문자열·NULL·기타 함수) — 수강 완료 · [복습 파일](../sql/01_review/section6_데이터가공_복습.sql)
-- [ ] **섹션 7. 집계와 그룹핑** ← 현재 진행 · [학습 기록](notes/section7_집계와그룹핑.md)
+- [x] **섹션 7. 집계와 그룹핑** — 완료 (2026-07-23) · [학습 기록](notes/section7_집계와그룹핑.md)
   - [x] 집계 함수 (COUNT·SUM·AVG·MIN·MAX)
   - [x] GROUP BY — 그룹으로 묶기 / 주의사항
-  - [ ] HAVING — 그룹 필터링
-  - [ ] SQL 실행 순서
-  - [ ] 문제와 풀이 / 정리
+  - [x] HAVING — 그룹 필터링
+  - [x] SQL 실행 순서
+  - [x] 문제와 풀이 / 정리 (풀이 생략, 정답 기록)
 
 ## 진행 현황 — SQL 심화
-- [ ] 조인 1 — 내부 조인 (조인이 필요한 이유, INNER JOIN)
+- [ ] **조인 1 — 내부 조인** (조인이 필요한 이유, INNER JOIN) ← 현재 진행
 - [ ] 조인 2 — 외부 조인 (LEFT JOIN 등)
 - [ ] 서브쿼리 (스칼라·다중 행·다중 컬럼·상관·SELECT·테이블 / 서브쿼리 vs JOIN)
 - [ ] UNION / UNION ALL / UNION 정렬
