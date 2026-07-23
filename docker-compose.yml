@@ -1,0 +1,28 @@
+# prgrms-MySQL 실습 환경
+# 실행:   docker compose up -d
+# 중지:   docker compose stop
+# 초기화: docker compose down -v && docker compose up -d  (볼륨 삭제 → 시드 자동 재적재)
+services:
+  mysql:
+    image: mysql:8.4
+    container_name: prgrms-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: "1234"
+      TZ: Asia/Seoul
+    ports:
+      - "3306:3306"
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_0900_ai_ci
+    volumes:
+      - mysql-data:/var/lib/mysql
+      # 최초 기동(빈 볼륨) 시 minwon DB 시드 자동 적재
+      - ./sql/00_setup:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-uroot", "-p1234", "--silent"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  mysql-data:

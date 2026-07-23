@@ -4,6 +4,9 @@
 -- 실행: docker exec -i prgrms-mysql mysql -uroot -p1234 < 이파일
 -- ============================================================
 
+-- 클라이언트 문자셋 고정 (도커 initdb 자동 실행 시 한글 깨짐 방지)
+SET NAMES utf8mb4;
+
 DROP DATABASE IF EXISTS minwon;
 CREATE DATABASE minwon CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
 USE minwon;

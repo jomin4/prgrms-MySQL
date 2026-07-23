@@ -10,7 +10,7 @@
 - [`docs/notes/`](docs/notes) — **섹션별 학습 기록** (핵심 개념·실습 쿼리·깨달음·Q&A를 md로 축적)
 - [`sql/00_setup/`](sql/00_setup) — 민원 시스템(minwon DB) 시드 스크립트
 - [`sql/01_review/`](sql/01_review) — 섹션 4~6 복습 문제 (데이터 관리 / 조회와 정렬 / 데이터 가공)
-- `sql/` — 이후 섹션별 실습 기록 (진행하며 추가)
+- [`sql/02_practice/`](sql/02_practice) — **섹션별 실습 쿼리 기록** (집계와 그룹핑 / 조인 / 서브쿼리 …)
 - `scripts/` — 챕터별 원격 반영 자동화
 
 ## 실습 환경
@@ -20,13 +20,19 @@
 | 접속 | `localhost:3306`, user `root`, pw `1234` |
 | DB | `minwon` (부서 7 · 담당자 18 · 민원인 40 · 민원 300) |
 
+[docker-compose.yml](docker-compose.yml)로 관리 — 최초 기동 시 minwon 시드가 **자동 적재**됩니다.
+
 ```bash
-# 최초 1회 생성
-docker run --name prgrms-mysql -e MYSQL_ROOT_PASSWORD=1234 -e TZ=Asia/Seoul -p 3306:3306 -d mysql:8.4
+# 시작 (최초 실행 시 시드 자동 적재)
+docker compose up -d
 
-# 재부팅 후 다시 시작
-docker start prgrms-mysql
+# 중지 / 재시작
+docker compose stop
+docker compose start
 
-# 시드 적재(초기화)
+# 완전 초기화 (볼륨 삭제 → 시드 재적재)
+docker compose down -v && docker compose up -d
+
+# 수동 시드 재적재가 필요할 때
 docker exec -i prgrms-mysql mysql -uroot -p1234 --default-character-set=utf8mb4 < sql/00_setup/complaint_system_seed.sql
 ```
