@@ -14,9 +14,9 @@
 - [x] 섹션 4. 데이터 관리 (DDL·DML·제약조건) — 수강 완료 · [복습 파일](../sql/01_review/section4_데이터관리_복습.sql)
 - [x] 섹션 5. 조회와 정렬 (SELECT·WHERE·ORDER BY·LIMIT·DISTINCT·NULL) — 수강 완료 · [복습 파일](../sql/01_review/section5_조회와정렬_복습.sql)
 - [x] 섹션 6. 데이터 가공 (산술·문자열·NULL·기타 함수) — 수강 완료 · [복습 파일](../sql/01_review/section6_데이터가공_복습.sql)
-- [ ] **섹션 7. 집계와 그룹핑** ← 현재 진행
-  - [ ] 집계 함수 (COUNT·SUM·AVG·MIN·MAX)
-  - [ ] GROUP BY — 그룹으로 묶기 / 주의사항
+- [ ] **섹션 7. 집계와 그룹핑** ← 현재 진행 · [학습 기록](notes/section7_집계와그룹핑.md)
+  - [x] 집계 함수 (COUNT·SUM·AVG·MIN·MAX)
+  - [x] GROUP BY — 그룹으로 묶기 / 주의사항
   - [ ] HAVING — 그룹 필터링
   - [ ] SQL 실행 순서
   - [ ] 문제와 풀이 / 정리

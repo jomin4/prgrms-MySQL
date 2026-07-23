@@ -7,6 +7,7 @@
 
 ## 구성
 - [`docs/ROADMAP.md`](docs/ROADMAP.md) — 커리큘럼 & 진행 현황
+- [`docs/notes/`](docs/notes) — **섹션별 학습 기록** (핵심 개념·실습 쿼리·깨달음·Q&A를 md로 축적)
 - [`sql/00_setup/`](sql/00_setup) — 민원 시스템(minwon DB) 시드 스크립트
 - [`sql/01_review/`](sql/01_review) — 섹션 4~6 복습 문제 (데이터 관리 / 조회와 정렬 / 데이터 가공)
 - `sql/` — 이후 섹션별 실습 기록 (진행하며 추가)
