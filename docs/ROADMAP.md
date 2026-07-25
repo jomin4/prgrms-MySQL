@@ -32,7 +32,11 @@
 - [x] **인덱스 2** — 완료 (2026-07-23) · [학습 기록](notes/index2_복합인덱스.md)
 - [x] **데이터 무결성** — 완료 (2026-07-23) · [학습 기록](notes/integrity_데이터무결성.md)
 - [x] **트랜잭션** — 완료 (2026-07-23) · [학습 기록](notes/transaction_트랜잭션.md)
-- [ ] **저장 프로시저·함수·트리거** ← 현재 진행 (마지막!)
+- [x] **저장 프로시저·함수·트리거** — 완료 (2026-07-23) · [학습 기록](notes/procedure_프로시저함수트리거.md)
+
+## 🎉 전 커리큘럼 완주! (2026-07-23)
+SQL 기본(섹션 4~7) + 심화(조인·서브쿼리·UNION·CASE·뷰·인덱스1,2·무결성·트랜잭션·프로시저) 전부 완료.
+실습 도메인: 민원 시스템(minwon) · 학습 기록: [docs/notes/](notes/) · 실습 쿼리: [sql/02_practice/](../sql/02_practice/)
 
 ## SQL 실행 순서 (핵심 암기)
 FROM/JOIN → ON/WHERE → GROUP BY → 집계함수 → HAVING → SELECT필드 → ORDER BY → LIMIT
